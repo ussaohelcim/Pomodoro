@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Pomodoro</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<header>
+		<h1>Pomodoro</h1>
+	</header>
+	<main>	
+		<div id="inicio">
+			<input tabindex="0" placeholder="task" type="text"  id="inptask">
+			<input tabindex="1" placeholder="tempo de trabalho em minutos" type="number" id="inptTempoTrabalho"> 
+			<input tabindex="2" placeholder="tempo de descanso em minutos" type="number" id="inptTempoDescanso"> 
+			<button tabindex="3" id="btnInciar">Iniciar</button>
+		</div>
+		
+		<div id="divTrabalhando">
+			<h1>VAI TRABALHAR, VAGABUNDO!</h1>
+			<p id="task">Comer cu</p>
+			<h3>Tempo restante <span id="tempoRestanteTrabalhando"></span> minutos</h3>
+			<!-- <button id="btnTerminei">TERMINEI</button> -->
+		</div>
+	
+		<div id="divDescansando">
+			<h1>Você pode descansar por <span id="tempoRestanteDescansando">5</span> minutos</h1>
+			<!-- <button id="btnDescansei">DESCANSEI</button> -->
+		</div>
+	
+	</main>
+	<footer>
+		<h3 id="txtContador">Você já concluiu: <span id="numContador">0</span> pomodoros </h3>
+
+		<p>Feito por <a tabindex="666" href="https://github.com/ussaohelcim/Pomodoro">ussaohelcim</a>. </p>
+	</footer>
+
+	<script src="main.js"></script>
+</body>
+</html>
